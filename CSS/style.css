@@ -27,6 +27,39 @@ main {
   padding: 0px 50px;
 }
 
+p {
+  font-family: "Raleway regular";
+  font-size: 0.9rem;
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "Raleway Bold";
+}
+
+h1 {
+  margin-bottom: -8px;
+  font-size: 1.22rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-family: "Raleway Bold";
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
 header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -53,18 +86,6 @@ header > nav {
   font-family: "Raleway Bold";
 }
 
-p {
-  font-family: "Raleway regular";
-}
-a {
-  text-decoration: none;
-}
-
-h1,
-h2 {
-  font-family: "Raleway Bold";
-}
-
 .actualBar {
   display: flex;
   height: 50px;
@@ -72,6 +93,7 @@ h2 {
 
 .actualBar > svg {
   background-color: #f2f2f2;
+  border-radius: 15px 0 0 15px;
   align-self: center;
   margin: 0;
   padding: 15px;
@@ -126,10 +148,119 @@ h2 {
   padding-left: 10px;
 }
 
-/*
-.filters > .filters {
-  border: black 1px solid;
+.tagline_info {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: row;
 }
-.filters > div {
-  border: black 1px solid;
-}*/
+
+.tagline_info > svg {
+  align-self: center;
+  border: solid #f2f2f2 1px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.tagline_info > p {
+  margin-left: 10px;
+  font-size: 0.85rem;
+}
+
+.hebergements {
+  display: grid;
+  grid-template-columns: 880px 420px;
+  column-gap: 40px;
+}
+
+.hébergementParVille,
+.populairesParVille {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.hébergementParVille > p {
+  font-family: "raleway bold";
+  font-size: 1.2rem;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
+
+.hebergement_liste {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.hebergement {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.hebergement > img {
+  width: 236px;
+  height: 114px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.hebergement > h3,
+.hebergement > p,
+.hebergement > ul {
+  margin: 5px;
+  padding-left: 5px;
+}
+
+.hebergement > h3 {
+  margin-top: 10px;
+}
+
+.hebergement > p {
+  font-family: "Raleway Regular";
+}
+
+.rating {
+  display: flex;
+  padding: 0;
+}
+
+.rating > li {
+  width: 1rem;
+}
+
+.populairesParVille {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr;
+  row-gap: 33px;
+}
+
+.titreGraph {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.titreGraph > svg {
+  align-self: auto;
+}
+
+.populaire {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 333px;
+  height: 144px;
+  padding: 5px;
+}
+
+.populaire > img {
+  width: 127px;
+  height: 144px;
+  border-radius: 20px 0px 0px 20px;
+  object-fit: cover;
+}
