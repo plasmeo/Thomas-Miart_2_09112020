@@ -9,21 +9,13 @@
 }
 
 body {
-  border: solid black 1px;
   width: 1440px;
   margin: auto;
 }
 
 header,
-header > nav,
-header > svg,
-.navbar > li,
-.navbar {
-  /*border: solid 1px;*/
-}
-
-header,
-main {
+main,
+footer {
   padding: 0px 50px;
 }
 
@@ -80,7 +72,7 @@ header > nav {
 }
 
 .navbar > li {
-  padding: 50px 25px 0px 25px;
+  padding: 50px 30px 0px 30px;
 
   border-top: #0065fc solid 2px;
   font-family: "Raleway Bold";
@@ -115,6 +107,7 @@ header > nav {
   margin: 0;
   padding: 15px;
   font-family: "Raleway Bold";
+  font-size: 1rem;
   color: white;
 }
 
@@ -128,22 +121,26 @@ header > nav {
   padding-right: 25px;
 }
 
-.filter_button {
-  display: flex;
-  padding-right: 15px;
-  margin-right: 25px;
-  border: solid 2px #f2f2f2;
-  border-radius: 50px;
+.filter_button :hover {
+  background-color: #deebff;
 }
 
-.filter_button > svg {
+.buttonContent {
+  display: flex;
+  border: solid 2px #f2f2f2;
+  border-radius: 50px;
+  padding-right: 25px;
+  margin-right: 25px;
+}
+
+.buttonContent > svg {
   align-self: center;
   padding: 15px;
   background-color: #deebff;
   border-radius: 50%;
 }
 
-.filter_button > p {
+.buttonContent > p {
   font-family: "Raleway Bold";
   padding-left: 10px;
 }
@@ -169,6 +166,7 @@ header > nav {
 .hebergements {
   display: grid;
   grid-template-columns: 880px 420px;
+  grid-template-rows: 626px;
   column-gap: 40px;
 }
 
@@ -176,14 +174,13 @@ header > nav {
 .populairesParVille {
   background-color: #f2f2f2;
   border-radius: 20px;
-  padding: 40px;
+  padding: 40px 40px 40px 40px;
 }
 
-.hébergementParVille > p {
+.hébergementParVille > .more {
   font-family: "raleway bold";
   font-size: 1.2rem;
   padding-top: 20px;
-  margin-bottom: 0px;
 }
 
 .hebergement_liste {
@@ -208,15 +205,19 @@ header > nav {
   border-radius: 15px 15px 0px 0px;
 }
 
-.hebergement > h3,
-.hebergement > p,
-.hebergement > ul {
-  margin: 5px;
-  padding-left: 5px;
+.hebergement_info {
+  margin-left: 5px;
+  margin-top: 5px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 0px;
 }
 
-.hebergement > h3 {
-  margin-top: 10px;
+.hebergement_info > h3,
+.hebergement_info > p,
+.hebergement_info > ul {
+  margin: 0px;
+  padding-top: 5px;
 }
 
 .hebergement > p {
@@ -232,13 +233,6 @@ header > nav {
   width: 1rem;
 }
 
-.populairesParVille {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 4fr;
-  row-gap: 33px;
-}
-
 .titreGraph {
   display: flex;
   flex-direction: row;
@@ -249,13 +243,19 @@ header > nav {
   align-self: auto;
 }
 
+.populaire_liste {
+  display: grid;
+  row-gap: 33px;
+}
+
 .populaire {
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
   width: 333px;
-  height: 144px;
+  height: 134px;
   padding: 5px;
+  display: flex;
 }
 
 .populaire > img {
@@ -263,4 +263,115 @@ header > nav {
   height: 144px;
   border-radius: 20px 0px 0px 20px;
   object-fit: cover;
+}
+
+.populaire_info {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.populaire_info > h3 {
+  margin-top: 10px;
+}
+
+.populaire_info > p {
+  margin-top: -10px;
+}
+
+.populaire_info > .rating {
+  padding-top: 25px;
+}
+
+.activités {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.listeDesActivités {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.activitéPrime {
+  height: 445px;
+}
+
+.activité,
+.activitéPrime {
+  width: 302px;
+  border-radius: 25px;
+}
+
+.activité > h3,
+.activitéPrime > h3 {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.activitéPrime > img {
+  object-fit: cover;
+  width: 302px;
+  height: 395px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.ActivitésRegular {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#pomègues {
+  height: 236px;
+}
+
+#pomègues > img {
+  object-fit: cover;
+  width: 302px;
+  height: 181px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#frioul {
+  height: 164px;
+}
+
+#frioul > img {
+  object-fit: cover;
+  width: 302px;
+  height: 114px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#notre_Dame {
+  height: 195px;
+}
+
+#notre_Dame > img {
+  object-fit: cover;
+  width: 302px;
+  height: 145px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#longchamp {
+  height: 208px;
+}
+
+#longchamp > img {
+  object-fit: cover;
+  width: 302px;
+  height: 153px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+footer {
+  padding: 40px 50px 50px 50px;
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+}
+
+footer > div {
 }
