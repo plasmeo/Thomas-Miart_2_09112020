@@ -14,8 +14,7 @@ body {
 }
 
 header,
-main,
-footer {
+main {
   padding: 0px 50px;
 }
 
@@ -34,7 +33,7 @@ h2 {
 
 h1 {
   margin-bottom: -8px;
-  font-size: 1.22rem;
+  font-size: 1.35rem;
 }
 
 h2 {
@@ -78,37 +77,54 @@ header > nav {
   font-family: "Raleway Bold";
 }
 
+.headsection > p {
+  font-size: 1rem;
+}
+
 .actualBar {
   display: flex;
   height: 50px;
+  width: 420px;
+  border: #f2f2f2 solid 1px;
+  border-radius: 15px;
 }
 
 .actualBar > svg {
   background-color: #f2f2f2;
   border-radius: 15px 0 0 15px;
   align-self: center;
+  width: 52px;
   margin: 0;
-  padding: 15px;
+  padding: 15px 0px;
+}
+
+#lookIcon {
+  display: none;
 }
 
 .actualBar > input {
   font-family: "Raleway Bold";
+  width: 234px;
   padding-left: 10px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   border: #f2f2f2 solid 1px;
 }
 ::placeholder {
   color: black;
 }
 
-.actualBar > p {
+.searchButton {
+  width: 134px;
   background-color: #0065fc;
   border-radius: 0 15px 15px 0;
-  margin: 0;
-  padding: 15px;
+}
+
+.searchButton > p {
+  text-align: center;
   font-family: "Raleway Bold";
   font-size: 1rem;
   color: white;
+  margin-top: 15px;
 }
 
 .filters {
@@ -118,7 +134,12 @@ header > nav {
 
 .filters > p {
   font-family: "Raleway Bold";
+  font-size: 1rem;
   padding-right: 25px;
+}
+
+.filter_Buttons {
+  display: flex;
 }
 
 .filter_button :hover {
@@ -128,6 +149,7 @@ header > nav {
 .buttonContent {
   display: flex;
   border: solid 2px #f2f2f2;
+  height: 46px;
   border-radius: 50px;
   padding-right: 25px;
   margin-right: 25px;
@@ -143,6 +165,8 @@ header > nav {
 .buttonContent > p {
   font-family: "Raleway Bold";
   padding-left: 10px;
+  font-size: 1.1rem;
+  align-self: center;
 }
 
 .tagline_info {
@@ -260,7 +284,7 @@ header > nav {
 
 .populaire > img {
   width: 127px;
-  height: 144px;
+  height: 134px;
   border-radius: 20px 0px 0px 20px;
   object-fit: cover;
 }
@@ -373,5 +397,167 @@ footer {
   grid-template-columns: 450px 450px 450px;
 }
 
-footer > div {
+@media all and (max-width: 980px) {
+  body {
+    width: 375px;
+  }
+
+  header,
+  main {
+    padding: 0px 20px;
+  }
+
+  main {
+    margin-bottom: -20px;
+  }
+
+  .headsection {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .headsection > p {
+    margin-bottom: 25px;
+  }
+
+  .actualBar {
+    width: 333px;
+  }
+
+  .actualBar > svg {
+    width: 51px;
+  }
+
+  .actualBar > input {
+    width: 232px;
+  }
+
+  #lookIcon {
+    display: block;
+    background-color: #0065fc;
+    border-radius: 15px;
+    margin-right: -30px;
+    border: solid 1px #0065fc;
+  }
+
+  .searchButton,
+  .searchButton > p {
+    display: none;
+  }
+
+  .filters {
+    display: block;
+    padding-top: 10px;
+  }
+
+  .filters > p {
+    font-size: 1.2rem;
+  }
+
+  .filter_Buttons {
+    height: 176px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  .buttonContent {
+    padding-right: 10px;
+    margin-right: 11px;
+  }
+
+  .buttonContent > p {
+    padding-left: 5px;
+    font-size: 1rem;
+  }
+
+  .hebergements {
+    margin-left: -20px;
+    display: grid;
+    grid-template-columns: 375px;
+    grid-template-rows: none;
+  }
+
+  .hébergementParVille,
+  .populairesParVille {
+    border-radius: 0px;
+    padding: 40px 20px 20px 20px;
+  }
+
+  .hébergementParVille {
+    grid-row-start: 2;
+    background-color: white;
+    padding-bottom: 10px;
+  }
+
+  .populaire_liste,
+  .hebergement_liste {
+    row-gap: 10px;
+  }
+
+  .populaire {
+    width: 325px;
+  }
+
+  .hebergement_liste {
+    grid-template-columns: none;
+  }
+
+  .hebergement {
+    width: 325px;
+    height: 200px;
+    overflow: visible;
+  }
+
+  .hebergement > img {
+    width: 325px;
+    height: 114px;
+  }
+
+  .activités {
+    margin-top: 20px;
+  }
+
+  .listeDesActivités {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .activité,
+  .activitéPrime {
+    height: 190px;
+    width: 333px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+  }
+
+  .activitéPrime > img {
+    width: 333px;
+    height: 134px;
+    border-radius: 25px 25px 0px 0px;
+  }
+
+  #pomègues,
+  #frioul,
+  #notre_Dame,
+  #longchamp {
+    height: 190px;
+  }
+
+  #pomègues > img,
+  #frioul > img,
+  #notre_Dame > img,
+  #longchamp > img {
+    width: 333px;
+    height: 134px;
+  }
+
+  footer {
+    padding: 20px 50px 30px 50px;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-rows: 130px 100px 100px;
+    grid-template-columns: none;
+    row-gap: 10px;
+  }
 }
