@@ -9,6 +9,7 @@
 }
 
 body {
+<<<<<<< HEAD
   width: 100%;
 }
 
@@ -18,6 +19,14 @@ body {
 }
 
 header {
+=======
+  width: 1440px;
+  margin: auto;
+}
+
+header,
+main {
+>>>>>>> parent of d555ab0... Correction du CSS et ajout du responsive
   padding: 0px 50px;
 }
 
@@ -27,10 +36,6 @@ p {
 }
 a {
   text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
-  color: inherit;
 }
 
 h1,
@@ -58,10 +63,6 @@ ul {
   list-style: none;
 }
 
-.mobileHeader {
-  display: none;
-}
-
 header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -83,16 +84,9 @@ header > nav {
 
 .navbar > li {
   padding: 50px 30px 0px 30px;
-  font-family: "Raleway Bold";
-  border-top: white solid 2px;
-}
 
-.navbar > li:hover {
   border-top: #0065fc solid 2px;
-}
-
-.headsection {
-  margin: 0px 50px;
+  font-family: "Raleway Bold";
 }
 
 .headsection > p {
@@ -158,12 +152,6 @@ header > nav {
 
 .filter_Buttons {
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-}
-
-.filter_button {
-  margin-bottom: 5px;
 }
 
 .filter_button :hover {
@@ -173,7 +161,6 @@ header > nav {
 .buttonContent {
   display: flex;
   border: solid 2px #f2f2f2;
-  border-left: none;
   height: 46px;
   border-radius: 50px;
   padding-right: 25px;
@@ -213,51 +200,30 @@ header > nav {
 }
 
 .hebergements {
-  /*display: grid;
+  display: grid;
   grid-template-columns: 880px 420px;
   grid-template-rows: 626px;
-  column-gap: 40px;*/
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  column-gap: 40px;
 }
 
-.hebergementParVille,
+.hébergementParVille,
 .populairesParVille {
   background-color: #f2f2f2;
   border-radius: 20px;
-  padding: 40px 40px 20px 40px;
-  margin-bottom: 20px;
+  padding: 40px 40px 40px 40px;
 }
 
-.hebergementParVille {
-  margin-right: 40px;
-}
-
-.hebergementParVille > p {
-  padding-top: 0px;
-  margin-top: 0px;
-}
-
-.hebergementParVille > .more {
+.hébergementParVille > .more {
   font-family: "raleway bold";
   font-size: 1.2rem;
   padding-top: 20px;
 }
 
 .hebergement_liste {
-  /*display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
-  row-gap: 30px;*/
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-between;
-  max-width: 850px;
-  margin: 0px -25px;
+  row-gap: 30px;
 }
 
 .hebergement {
@@ -265,11 +231,7 @@ header > nav {
   border-radius: 20px;
   padding: 5px;
   height: 200px;
-  margin-left: 15px;
-  margin-right: 15px;
   overflow: hidden;
-  box-shadow: 1px 3px 19px 0px rgba(0, 0, 0, 0.32);
-  margin-bottom: 30px;
 }
 
 .hebergement > img {
@@ -330,7 +292,6 @@ header > nav {
   height: 134px;
   padding: 5px;
   display: flex;
-  box-shadow: 1px 3px 19px 0px rgba(0, 0, 0, 0.32);
 }
 
 .populaire > img {
@@ -357,70 +318,55 @@ header > nav {
   padding-top: 25px;
 }
 
-.activites {
+.activités {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.activites > h2 {
-  margin-left: 50px;
-}
-
-.listeDesActivites {
+.listeDesActivités {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-between;
+  justify-content: space-between;
 }
 
-.activitePrime {
+.activitéPrime {
   height: 445px;
 }
 
-.activite,
-.activitePrime {
+.activité,
+.activitéPrime {
   width: 302px;
   border-radius: 25px;
-  box-shadow: 1px 3px 19px 0px rgba(0, 0, 0, 0.32);
 }
 
-.activitePrime,
-.ActivitesRegular {
-  margin: 0px 22px 20px 22px;
-}
-
-.activite > h3,
-.activitePrime > h3 {
+.activité > h3,
+.activitéPrime > h3 {
   margin-left: 20px;
   margin-top: 10px;
 }
 
-.activitePrime > img {
+.activitéPrime > img {
   object-fit: cover;
   width: 302px;
   height: 395px;
   border-radius: 25px 25px 0px 0px;
 }
 
-.ActivitesRegular {
+.ActivitésRegular {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-content: center;
-  height: 446px;
 }
 
-#pomegues {
+#pomègues {
   height: 236px;
 }
 
-#pomegues > img {
+#pomègues > img {
   object-fit: cover;
   width: 302px;
   height: 181px;
   border-radius: 25px 25px 0px 0px;
-  object-position: 50% 39%;
 }
 
 #frioul {
@@ -432,7 +378,6 @@ header > nav {
   width: 302px;
   height: 114px;
   border-radius: 25px 25px 0px 0px;
-  object-position: 50% 15%;
 }
 
 #notre_Dame {
@@ -444,7 +389,6 @@ header > nav {
   width: 302px;
   height: 145px;
   border-radius: 25px 25px 0px 0px;
-  object-position: 50% 0%;
 }
 
 #longchamp {
@@ -456,24 +400,16 @@ header > nav {
   width: 302px;
   height: 153px;
   border-radius: 25px 25px 0px 0px;
-  object-position: 50% 15%;
 }
 
 footer {
   padding: 40px 50px 50px 50px;
   background-color: #f2f2f2;
-
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* display: flex;
-  flex-direction: row;
-  align-content: flex-start;
-  flex-wrap: wrap;*/
-}
-.mentions {
-  min-width: 250px;
+  grid-template-columns: 450px 450px 450px;
 }
 
+<<<<<<< HEAD
 @media all and (max-width: 768px) {
   body {
     border: black solid 1px;
@@ -518,6 +454,29 @@ footer {
 
   .mobileNavbar > a:hover {
     border-bottom: 3px #0065fc solid;
+=======
+@media all and (max-width: 980px) {
+  body {
+    width: 375px;
+  }
+
+  header,
+  main {
+    padding: 0px 20px;
+  }
+
+  main {
+    margin-bottom: -20px;
+  }
+
+  .headsection {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .headsection > p {
+    margin-bottom: 25px;
+>>>>>>> parent of d555ab0... Correction du CSS et ajout du responsive
   }
 
   .actualBar {
@@ -632,23 +591,27 @@ footer {
   }
 
   .hebergements {
+    margin-left: -20px;
     display: grid;
     grid-template-columns: 375px;
     grid-template-rows: none;
   }
 
+<<<<<<< HEAD
   .hebergementParVille {
     border-radius: 0px;
     padding: 40px 40px 20px 40px;
   }
 
+=======
+  .hébergementParVille,
+>>>>>>> parent of d555ab0... Correction du CSS et ajout du responsive
   .populairesParVille {
     border-radius: 0px;
     padding: 40px 20px 20px 20px;
   }
 
-  .hebergementParVille {
-    margin-right: 0px;
+  .hébergementParVille {
     grid-row-start: 2;
     background-color: white;
     padding-bottom: 10px;
@@ -671,7 +634,6 @@ footer {
     width: 325px;
     height: 200px;
     overflow: visible;
-    margin-bottom: 0px;
   }
 
   .hebergement > img {
@@ -679,46 +641,37 @@ footer {
     height: 114px;
   }
 
-  .activites {
+  .activités {
     margin-top: 20px;
   }
 
-  .listeDesActivites {
-    flex-direction: row;
-    justify-content: center;
-    margin: 0px 0px;
+  .listeDesActivités {
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  .activitePrime,
-  .ActivitesRegular {
-    margin: 12px 0px;
-  }
-
-  .ActivitesRegular {
-    height: 404px;
-  }
-
-  .activite,
-  .activitePrime {
+  .activité,
+  .activitéPrime {
     height: 190px;
     width: 333px;
     border-radius: 25px;
+    margin-bottom: 10px;
   }
 
-  .activitePrime > img {
+  .activitéPrime > img {
     width: 333px;
     height: 134px;
     border-radius: 25px 25px 0px 0px;
   }
 
-  #pomegues,
+  #pomègues,
   #frioul,
   #notre_Dame,
   #longchamp {
     height: 190px;
   }
 
-  #pomegues > img,
+  #pomègues > img,
   #frioul > img,
   #notre_Dame > img,
   #longchamp > img {
@@ -730,6 +683,6 @@ footer {
     display: grid;
     grid-template-rows: 130px 100px 100px;
     grid-template-columns: none;
-    row-gap: 20px;
+    row-gap: 10px;
   }
 }
