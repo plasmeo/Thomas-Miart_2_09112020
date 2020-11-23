@@ -63,7 +63,7 @@ ul {
 }
 
 main {
-  padding: 50px;
+  padding: 10px 50px 50px 50px;
 }
 
 header {
@@ -79,7 +79,7 @@ header > nav {
   grid-column-start: 3;
 }
 
-#logo {
+.logo {
   padding-top: 35px;
 }
 
@@ -88,7 +88,6 @@ header > nav {
   display: flex;
   list-style: none;
   justify-content: center;
-  padding-inline-start: 0px;
 }
 
 .navbar > li {
@@ -221,6 +220,244 @@ header > nav {
   font-size: 0.85rem;
 }
 
+.hebergements {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hebergementParVille > h2,
+.titreGraph > h2 {
+  padding-left: 40px;
+}
+
+.hebergementParVille {
+  padding-top: 40px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  max-width: 880px;
+}
+
+.more {
+  font-family: "Raleway Bold";
+  padding-left: 40px;
+  margin-top: 0px;
+}
+
+.hebergement_liste {
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.hebergement {
+  border-radius: 20px;
+  padding: 5px;
+  background-color: white;
+  margin-bottom: 30px;
+  box-shadow: 0px 1px 29px -11px rgba(0, 0, 0, 0.75);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.hebergement > a {
+  overflow: hidden;
+  width: 236px;
+  height: 200px;
+}
+
+.hebergement > a > img {
+  width: inherit;
+  height: 115px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+
+.hebergement > img {
+  width: inherit;
+  height: 115px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+
+.hebergement_info > h3,
+.hebergement_info > ul,
+.hebergement_info > p {
+  padding: 7px 0px 0px 10px;
+  margin: 0px;
+}
+
+.rating > li {
+  display: inline-block;
+}
+
+.populairesParVille {
+  padding-top: 40px;
+  min-width: 420px;
+  max-width: 420px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  margin-left: 40px;
+}
+
+.titreGraph {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+
+.populaire_liste {
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.populaire > a {
+  width: 333px;
+  background-color: white;
+  border-radius: 20px;
+  height: 134px;
+  overflow: hidden;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 33px;
+  box-shadow: 0px 1px 29px -11px rgba(0, 0, 0, 0.75);
+}
+
+.populaire > a > img {
+  width: 127px;
+  object-fit: cover;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.populaire_info {
+  padding: 0px 20px 0px 20px;
+}
+
+.populaire_info > h3,
+.populaire_info > p {
+  margin: 10px 0px 0px 0px;
+}
+
+.populaire_info > .rating {
+  margin-top: 30px;
+  padding-inline-start: 0px;
+}
+
+.activites {
+  margin-top: 60px;
+}
+
+.listeDesActivites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0px;
+  margin: 0px -20px;
+}
+
+.activiteRegular {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activitePrime,
+.activiteRegular {
+  margin-bottom: 20px;
+}
+
+.activitePrime,
+.activiteRegular {
+  padding: 0px 20px;
+}
+
+.activite {
+  width: 302px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 1px 29px -11px rgba(0, 0, 0, 0.75);
+}
+
+.activite > img {
+  object-fit: cover;
+  width: 302px;
+}
+
+#port,
+#calanques {
+  height: 445px;
+}
+
+#port > img,
+#calanques > img {
+  height: 390px;
+}
+
+#pomegues {
+  height: 235px;
+}
+
+#pomegues > img {
+  height: 180px;
+}
+
+#frioul {
+  height: 165px;
+}
+
+#frioul > img {
+  height: 110px;
+}
+
+#notre_Dame {
+  height: 193px;
+}
+
+#notre_Dame > img {
+  height: 135px;
+}
+
+#longchamp {
+  height: 209px;
+}
+
+#longchamp > img {
+  height: 153px;
+}
+
+#pomegues,
+#notre_Dame {
+  margin-bottom: 20px;
+}
+
+.footerContainer {
+  background-color: #f2f2f2;
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.mentions {
+  padding: 0px 50px;
+  width: 25%;
+  min-width: 250px;
+}
+
 @media screen and (max-width: 768px) {
   body {
     width: 100%;
@@ -245,8 +482,8 @@ header > nav {
     color: #0065fc;
   }
 
-  .mobileHeader {
-    border-bottom: #f2f2f2 2px solid;
+  .navbar {
+    margin: 0px -50px;
   }
 
   .navbar > li {
@@ -260,6 +497,8 @@ header > nav {
   .navbar > li > a {
     width: 100%;
     text-align: center;
+    padding-bottom: 20px;
+    border-bottom: #f2f2f2 2px solid;
   }
 
   .navbar > li > a:hover {
@@ -286,5 +525,160 @@ header > nav {
 
   .searchButton {
     display: none;
+  }
+
+  .hebergement_liste {
+    justify-content: space-around;
+  }
+
+  .hebergement {
+    margin: 15px 5px;
+  }
+
+  .populairesParVille {
+    margin: 30px 0px;
+  }
+
+  .listeDesActivites {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .navbar {
+    margin: 0px;
+    padding-inline-start: 0px;
+  }
+
+  .mobileHeader {
+    margin-top: -10px;
+    padding: 0px;
+    border-bottom: none;
+  }
+  .logoAndRegister {
+    margin: 0px 21px;
+  }
+
+  header {
+    padding: 0px 21px;
+  }
+
+  main {
+    padding: 10px 0px 50px 0px;
+  }
+
+  .headsection {
+    padding: 0px 21px 0px 21px;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .buttonContent {
+    padding-right: 20px;
+    margin-right: 10px;
+  }
+
+  .buttonContent > p {
+    font-size: 0.9rem;
+  }
+
+  .tagline_info > p {
+    font-size: 0.9rem;
+  }
+
+  .hebergements {
+    flex-direction: column-reverse;
+  }
+
+  .populairesParVille {
+    width: 100%;
+    min-width: 0px;
+    max-width: 100%;
+    margin: 0px 0px;
+    border-radius: 0px;
+    padding-bottom: 25px;
+  }
+
+  .populaire > a {
+    margin-bottom: 10px;
+  }
+
+  .hebergementParVille {
+    background-color: white;
+    padding-top: 20px;
+  }
+
+  .hebergement_liste {
+    padding: 0px;
+  }
+
+  .hebergement {
+    width: 334px;
+    margin: 5px;
+  }
+
+  .hebergement > a {
+    width: 334px;
+  }
+
+  .hebergementParVille > p {
+    margin-top: 30px;
+    padding-left: 21px;
+  }
+
+  .hebergementParVille > h2,
+  .populairesParVille > h2 {
+    padding-left: 21px;
+  }
+
+  .activites {
+    padding: 0px 21px;
+  }
+
+  .activitePrime,
+  .activiteRegular {
+    margin-bottom: 0px;
+  }
+
+  .activite {
+    margin-bottom: 20px;
+  }
+
+  #port,
+  #pomegues,
+  #frioul,
+  #calanques,
+  #notre_Dame,
+  #longchamp {
+    height: 190px;
+  }
+
+  #port > img,
+  #pomegues > img,
+  #frioul > img,
+  #calanques > img,
+  #notre_Dame > img,
+  #longchamp > img {
+    height: 134px;
+  }
+
+  .activite > h3 {
+    padding-left: 20px;
+  }
+
+  footer {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .mentions {
+    padding-top: 10px;
   }
 }
